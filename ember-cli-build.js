@@ -20,5 +20,12 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+// ember-cli-build.js
+var app = new EmberApp(defaults, {
+  sassOptions: {
+    extension: 'scss'
+  }
+});
+
   return app.toTree();
 };
